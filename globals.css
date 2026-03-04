@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-biel-blue: #2882ff;
+  --color-biel-bg: #0f0f0f;
+  --color-biel-surface: #141414;
+  --color-biel-border: #1e1e1e;
+}
+
+@layer base {
+  body {
+    @apply bg-biel-bg text-gray-100 antialiased selection:bg-biel-blue/30 selection:text-white;
+  }
+}
+
+/* Glassmorphism utilities */
+@layer utilities {
+  .glass {
+    @apply bg-black/40 backdrop-blur-md border border-white/5;
+  }
+}
